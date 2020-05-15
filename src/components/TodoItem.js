@@ -10,6 +10,8 @@ export class TodoItem extends Component {
             fontSize: '26px',
             textDecoration: this.props.todo.completed 
             ? 'line-through' : 'none',
+            backgroundColor: this.props.todo.completed
+            ? '#050505' : '#181a1b',
         }
     }
 
@@ -20,14 +22,13 @@ export class TodoItem extends Component {
             //Displaying each todo
             <div style={this.itemStyle()}>
                 <input type="checkbox" onChange={this.props.tickComplete.bind(this, id)}></input>
-                { this.props.todo.title }
+                { title }
                 <button style={xStyle}>x</button>
             </div>
         )
     }
 }
 
-//To do later
 const xStyle = {
     float: 'right',
     backgroundColor: '#ff1605',

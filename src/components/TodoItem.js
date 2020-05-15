@@ -13,7 +13,7 @@ export class TodoItem extends Component {
 const itemStyle = {
     color: '#fff'
 }
-
+{/* end this buttons styles , commit and then pass props from app.js || also change header*/}
 const xStyle = {
 
 }

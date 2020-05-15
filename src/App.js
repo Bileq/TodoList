@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        <TodoList />
+        <TodoList todos={this.state.todos}/>
       </div>
     )
   }

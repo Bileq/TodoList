@@ -3,17 +3,21 @@ import React, { Component } from 'react'
 export class TodoItem extends Component {
     render() {
         return (
-            <div>
-                
+            //Displaying each todo
+            <div style={itemStyle}>
+                { this.props.todo.title }
             </div>
         )
     }
 }
 
 const itemStyle = {
-    color: '#fff'
+    color: '#fff',
+    borderBottom: '#ff1605 solid 1px',
+    padding: '60px 0px 60px 60px',
+    fontSize: '26px',
 }
-{/* end this buttons styles , commit and then pass props from app.js || also change header*/}
+//To do later
 const xStyle = {
 
 }

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import TodoItem from './TodoItem'
 
-export default function TodoList() {
-    return (
-        <div>
-            <todoItem />
-        </div>
-    )
+export class TodoList extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
+
+export default TodoList
+

@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function TodoItem() {
-    return (
-        <div>
-            
-        </div>
-    )
+export class TodoItem extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
+
+const itemStyle = {
+    color: '#fff'
+}
+
+const xStyle = {
+
+}
+export default TodoItem
+

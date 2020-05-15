@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/layout/Header'
 import TodoList from './components/TodoList'
+import AddTodo from './components/AddTodo'
  
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
       }
     ]
   }
+
   //changing state of todos.completed
   tickComplete = id => {
     this.setState({ todos: this.state.todos.map( todo => {
@@ -38,10 +40,16 @@ class App extends Component {
     this.setState({todos: [...this.state.todos.filter( todo => todo.id !== id)]})
   }
 
+  //Adding todo
+  addTodo = () => {
+    
+  }
+
   render() {
     return (
       <div className="app">
         <Header />
+        <AddTodo addTodo={this.addTodo}/>
         <TodoList todos={this.state.todos} tickComplete={this.tickComplete}
         delTodo={this.delTodo}
         />

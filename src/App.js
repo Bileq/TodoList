@@ -23,21 +23,28 @@ class App extends Component {
       }
     ]
   }
-
+  //changing state of todos.completed
   tickComplete = id => {
     this.setState({ todos: this.state.todos.map( todo => {
       if (todo.id === id) {
         todo.completed = !todo.completed
       }
       return todo
-    }) })
+    }) });
 }
+
+  //Deleting todo
+  delTodo = id => {
+    
+  }
 
   render() {
     return (
       <div className="app">
         <Header />
-        <TodoList todos={this.state.todos} tickComplete={this.tickComplete}/>
+        <TodoList todos={this.state.todos} tickComplete={this.tickComplete}
+        delTodo={this.delTodo}
+        />
       </div>
     )
   }

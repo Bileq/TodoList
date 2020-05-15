@@ -41,8 +41,14 @@ class App extends Component {
   }
 
   //Adding todo
-  addTodo = () => {
-    
+  addTodo = title => {
+    const newInput = {
+      id: 4,
+      title: title,
+      completed: false
+    }
+    //adding this const newInput to existing array
+    this.setState({todos: [...this.state.todos, newInput]})
   }
 
   render() {

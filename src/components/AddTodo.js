@@ -4,18 +4,18 @@ export class AddTodo extends Component {
     state = {
         title: '',
     }
-    //add onChange and onSubmit events
+    //add onSubmit events
     /* 
     onSubmit = e => {
         e.preventDefault();
 
     }
     */
-    /*
+    
     onChange = e => {
-        this.setState({ [e.target.name]: e.target.value});
+        this.setState({ [e.target.name] : e.target.value});
     }
-    */
+    
     
     render() {
         return (
@@ -26,8 +26,8 @@ export class AddTodo extends Component {
                     placeholder="Add todo..."
                     name="title"
                     style={addTodoStyle}
-                    //value={this.state.title}
-                    //onChange={this.onChange()}            
+                    value={this.state.title}
+                    onChange={this.onChange}            
                     />
                     <input 
                     type="submit"

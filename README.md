@@ -1,3 +1,9 @@
+This is my first React app. I have created it to practice my knowledge and skills.
+Here you can check the final result: https://todolist-by-bileq.herokuapp.com/
+
+
+## Created by react-create-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

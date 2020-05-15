@@ -13,10 +13,12 @@ export class TodoItem extends Component {
         }
     }
 
+
     render() {
         return (
             //Displaying each todo
             <div style={this.itemStyle()}>
+                <input type="checkbox" onChange={this.props.tickComplete}></input>
                 { this.props.todo.title }
                 <button style={xStyle}>x</button>
             </div>

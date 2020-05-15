@@ -24,13 +24,15 @@ class App extends Component {
     ]
   }
 
-
+  tickComplete = e => {
+    console.log("app js")
+}
 
   render() {
     return (
       <div className="app">
         <Header />
-        <TodoList todos={this.state.todos}/>
+        <TodoList todos={this.state.todos} tickComplete={this.tickComplete}/>
       </div>
     )
   }
